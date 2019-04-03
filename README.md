@@ -39,7 +39,9 @@ or add the environmental variable to the `Dockerfile`
 
 ``` bash
 ENV NODE_ENV=production \
-    PLATFORM_HOST=[OakOS IP]:443
+    PLATFORM_HOST=[OakOS IP]:443 \
+    SHUTDOWN_TIME="0 * * * * *" \
+    TZ=America/Los_Angeles
 ```
 
 Now that you have the gRPC server set to an OakOS unit you can run
