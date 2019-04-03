@@ -5,9 +5,7 @@ const shutdownTime = process.env.SHUTDOWN_TIME || '0 * * * * *'
 const timezone = process.env.TZ || 'America/Los_Angeles'
 const { join } = require('path')
 
-
 var schedule = require('node-schedule');
-
 var moment = require('moment-timezone');
 var platform = require(join(__dirname, 'platform'))
 
